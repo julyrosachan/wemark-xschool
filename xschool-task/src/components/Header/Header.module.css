@@ -1,0 +1,133 @@
+.header {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 19px;
+  color: #e0e0e0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.nav a {
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 0.9px;
+  background-color: #e0e0e0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.talk {
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 37px;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.talk::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 0.9px;
+  background-color: #e0e0e0;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.talk:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .talk {
+    font-size: 0;
+    line-height: 32px;
+  }
+
+  .talk::before {
+    content: "Menu";
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .talk::after {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    top: 24px;
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+  .logo {
+  
+
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .talk {
+    font-size: 0;
+    line-height: 28px;
+  }
+
+  .talk::before {
+    content: "Menu";
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .talk::after {
+    display: none;
+  }
+}

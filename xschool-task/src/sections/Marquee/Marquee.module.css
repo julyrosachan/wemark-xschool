@@ -1,0 +1,77 @@
+.marquee {
+  background: #e0e0e0;
+  overflow: hidden;
+  height: 321px;
+}
+
+.row {
+  overflow: hidden;
+  border-top: 1px solid #10101580;
+}
+
+.row:last-child {
+  border-bottom: 1px solid #10101580;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+  width: max-content;
+  padding: 22px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-right: 34px;
+  flex-shrink: 0;
+}
+
+.item span {
+  font-family: "TT Hoves", sans-serif;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #14151d;
+  white-space: nowrap;
+}
+
+.star {
+  color: #FF3C2A !important;
+}
+
+@media (max-width: 768px) {
+
+  .marquee{
+    height: 321px;
+  }
+  .group {
+    padding: 16px 0;
+  }
+
+  .item {
+    gap: 34px;
+    margin-right: 34px;
+  }
+
+  .item span {
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 76px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .star {
+  color: #14151d !important;
+}
+}

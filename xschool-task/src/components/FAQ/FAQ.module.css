@@ -1,0 +1,116 @@
+.faq {
+  background: #e0e0e0;
+  padding: 90px 56px 120px;
+  color: #14151d;
+}
+
+.faq h2 {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  white-space: pre-line;
+  margin-bottom: 70px;
+}
+
+.list {
+  border-top: 1px solid #b8b8b8;
+}
+
+.item {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.question {
+  width: 100%;
+  padding: 28px 0;
+  border: none;
+  background: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  font-family: "TT Hoves", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #14151d;
+  text-align: left;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 34px;
+  line-height: 1;
+  color: #8a8a8a;
+  transition: transform 0.35s ease;
+}
+
+.question:hover .icon {
+  transform: rotate(90deg);
+}
+
+.answerWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.55s ease, opacity 0.45s ease;
+  opacity: 0;
+}
+
+.answerWrap.open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.answer {
+  max-width: 1180px;
+  padding: 0 80px 36px 0;
+
+  font-size: 20px;
+  line-height: 30px;
+  color: #777;
+}
+
+.answer p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .faq {
+    padding: 64px 20px 80px;
+  }
+
+  .faq h2 {
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 72px;
+
+    letter-spacing: 0;
+    margin-bottom: 44px;
+  }
+
+  .question {
+    padding: 22px 0;
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .answer {
+    padding: 0 0 28px;
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+}

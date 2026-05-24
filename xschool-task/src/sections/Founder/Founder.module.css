@@ -1,0 +1,196 @@
+
+.founder {
+  padding: 90px 56px 140px;
+  color: #14141A;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 98px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 120px;
+  align-items: center;
+}
+
+.imageBox {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  overflow: hidden;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+
+  transform: scale(1);
+  transition: transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imageBox:hover img {
+  transform: scale(1.08);
+}
+
+.badge {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translate(-50%, 40px);
+
+  opacity: 0;
+
+  width: max-content;
+  max-width: 90%;
+
+  padding: 12px 22px;
+  border-radius: 6px;
+  background: #e0e0e0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #14151d;
+
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.5s ease;
+}
+
+.imageBox:hover .badge {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.badge strong {
+  font-weight: 500;
+}
+
+.badge span {
+  opacity: 0.75;
+}
+
+.textBox {
+  max-width: 660px;
+}
+
+.textBox h3 {
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 54px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
+.textBox p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+@media (max-width: 768px) {
+  .founder {
+    padding: 64px 20px 80px;
+  }
+
+  .title {
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: flex-start;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .imageBox {
+    width: 335px;
+    height: 335px;
+    margin-left: 0;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .textBox {
+    width: 335px;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .textBox h3 {
+    width: 335px;
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .textBox p {
+    font-family: "TT Hoves", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .badge {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 40px);
+    width: 289px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px 20px;
+    border-radius: 3.85px;
+    background: #e0e0e0;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    animation: badgeReveal 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.4s;
+  }
+
+  .badge strong,
+  .badge span {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .badge span {
+    opacity: 0.7;
+  }
+}
+
+@keyframes badgeReveal {
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
