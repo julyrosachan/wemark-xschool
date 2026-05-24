@@ -74,7 +74,6 @@ The following sections are populated dynamically:
 The project is fully optimized for:
 
 * Desktop
-* Tablet
 * Mobile devices
 
 The layout and typography were carefully adjusted to match the provided design across different screen sizes.
