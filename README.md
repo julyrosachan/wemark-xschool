@@ -1,191 +1,36 @@
-# Wemark xSchool Landing Page
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A fully responsive and pixel-perfect landing page built with Next.js based on the provided Figma design.
+## Getting Started
 
-The project was developed as a frontend task implementation with a strong focus on clean component architecture, responsive behavior, and server-side data fetching.
-
----
-
-# 🚀 Live Demo
-
-Vercel Deployment:
-
-```bash
-https://your-vercel-link.vercel.app
-```
-
----
-
-# 📂 GitHub Repository
-
-```bash
-https://github.com/yourusername/wemark-xschool
-```
-
----
-
-# 🛠 Tech Stack
-
-* Next.js 16
-* React 19
-* CSS Modules
-* REST API Integration
-* Server-Side Rendering (SSR)
-* Responsive Web Design
-* Vercel Deployment
-
----
-
-# ✨ Features
-
-* Pixel-perfect implementation based on Figma design
-* Fully responsive layout for desktop and mobile
-* Dynamic API-driven content
-* Functional FAQ accordion section
-* Functional image/content slider
-* Infinite marquee/text slider section
-* Reusable component-based architecture
-* Clean folder structure
-* Optimized rendering and styling
-
----
-
-# 📡 API Integration
-
-All dynamic content is fetched from the provided API:
-
-```bash
-https://admin.wemark.pro/api/tasks-xschool/
-```
-
-The following sections are populated dynamically:
-
-* Banner
-* About xSchool
-* Founder
-* Program
-* Marquee (text_slider)
-* FAQ
-
----
-
-# 📱 Responsive Design
-
-The project is fully optimized for:
-
-* Desktop
-* Mobile devices
-
-The layout and typography were carefully adjusted to match the provided design across different screen sizes.
-
----
-
-# ⚙️ Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/julyrosachan/wemark-xschool.git
-```
-
-Navigate to the project folder:
-
-```bash
-cd wemark-xschool
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Build the project:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm run build
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Start production server:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-npm run start
-```
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-# 📁 Project Structure
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```bash
-src/
- ├── app/
- ├── components/
- │    ├── FAQ/
- │    ├── Footer/
- │    ├── Header/
- │    └── Slider/
- │
- ├── sections/
- │    ├── About/
- │    ├── Banner/
- │    ├── Founder/
- │    ├── Marquee/
- │    └── Program/
- │
- └── services/
-      └── xschoolApi.js
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-# 🎯 Task Requirements Covered
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-✅ Next.js implementation
-
-✅ API integration
-
-✅ Server-side requests
-
-✅ Responsive design
-
-✅ Functional slider
-
-✅ Functional marquee section
-
-✅ Functional FAQ accordion
-
-✅ Clean component structure
-
-✅ Vercel deployment
-
----
-
-# 🎨 Design Reference
-
-Figma Design:
-
-```bash
-https://www.figma.com/design/GNQ1hNiKa3Q9m6KaNHnqnO/Wemark--Task
-```
-
----
-
-# 👩‍💻 Author
-
-Rosa
-
-Frontend Developer
-
----
-
-# 📌 Notes
-
-* The project was developed according to the provided technical requirements.
-* The layout was implemented with attention to spacing, typography, and responsive behavior.
-* The architecture was kept modular and scalable for easier maintenance.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
