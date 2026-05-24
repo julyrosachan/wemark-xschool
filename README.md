@@ -172,8 +172,7 @@ src/
 Figma Design:
 
 ```bash
-[https://www.figma.com/design/GNQ1hNiKa3Q9m6KaNHnqnO/Wemark--Task](https://www.figma.com/design/GNQ1hNiKa3Q9m6KaNHnqnO/Wemark--
-Task?node-id=0-1&amp;t=A1mXEWE75P4sNETC-1)
+https://www.figma.com/design/GNQ1hNiKa3Q9m6KaNHnqnO/Wemark--Task
 ```
 
 ---
