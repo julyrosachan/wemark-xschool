@@ -49,17 +49,24 @@
 .line {
     height: 1px;
     background: #e0e0e0;
-    opacity: 0.5;
+    opacity: 0.12;
     margin: 42px 0 44px;
 }
 
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footerLogo svg  {
-    text-align: center;
-    font-size: 150px;
+ text-align: center;
+width: 876.4985px;
+height: 139.338px;
     line-height: 1;
     font-weight: 700;
     color: #e0e0e0;
-    opacity: 0.5;
+    opacity: 0.12;
 }
 .languages {
   display: none;
