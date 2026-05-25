@@ -65,17 +65,32 @@
   display: none;
 }
 
-
-.bottom {
-    margin-top: 52px;
-    display: flex;
-    gap: 34px;
-    align-items: center;
-    color: #e0e0e0;
-    opacity: 0.5;
-    font-size: 14px;
+.langMobile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.bottom {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #e0e0e0;
+  opacity: 0.5;
+}
+
+.bottom span:nth-child(2) {
+  margin-left: 32px;
+}
+
+.bottom span:nth-child(3) {
+  margin-left: auto;
+}
 .bottom span:last-child {
     margin-left: auto;
 }
@@ -207,4 +222,5 @@
 
     background: rgba(224, 224, 224, 0.35);
   }
+
 }
